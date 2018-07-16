@@ -3,21 +3,21 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{910C4C80-0974-4AE7-8D7A-3CFD3CA0CC3A}</ProjectGuid>
+    <ProjectGuid>{42DFF6F0-FB9B-4979-B738-815DBF8D7A50}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WordWebAddIn1</RootNamespace>
-    <AssemblyName>WordWebAddIn1</AssemblyName>
+    <RootNamespace>TestAddOn</RootNamespace>
+    <AssemblyName>TestAddOn</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetOfficeVersion>15.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
-    <AppFeaturePartId>{281a1b56-67da-4771-95d0-bfa78484456b}</AppFeaturePartId>
-    <WspPartId>{bd605215-daea-48c9-82a7-9d55d0e3ba7e}</WspPartId>
-    <WorkflowPartId>{377f9a52-c5cc-4464-8c87-e31977f4efa9}</WorkflowPartId>
-    <CspkgPartId>{39fb2d0a-122b-4f05-ad5d-c91233bf207c}</CspkgPartId>
-    <SqlPackagePartId>{ac50c811-9128-49a9-ac35-b1f5ba16c62e}</SqlPackagePartId>
+    <AppFeaturePartId>{54f0d52e-2ee0-4641-b1a6-857d4fc4b7fb}</AppFeaturePartId>
+    <WspPartId>{2f7a0049-debd-415b-be82-b1123eed156a}</WspPartId>
+    <WorkflowPartId>{f630944e-a204-4e2a-88c8-d4225d30c480}</WorkflowPartId>
+    <CspkgPartId>{831e66a9-e840-43b8-ab49-45df56b6b67b}</CspkgPartId>
+    <SqlPackagePartId>{589f51e7-5b91-4366-ad4f-91eba188b11b}</SqlPackagePartId>
     <ProjectMode>OfficeApp</ProjectMode>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
@@ -42,21 +42,21 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="WordWebAddIn1Manifest\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{c8c6e3c9-0f70-4a73-ac3b-28194622b5b8}</SharePointProjectItemId>
+    <None Include="TestAddOnManifest\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2dd053ec-13e1-48c2-9a97-fe4b15e1fcfe}</SharePointProjectItemId>
     </None>
-    <Content Include="WordWebAddIn1Manifest\WordWebAddIn1.xml">
+    <Content Include="TestAddOnManifest\TestAddOn.xml">
       <OpcRelationship>manifest-oemanifest</OpcRelationship>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WordWebAddIn1Web\WordWebAddIn1Web.csproj">
-      <Project>{A535D87C-EA0D-47E0-BB18-59105AFAE830}</Project>
-      <Name>WordWebAddIn1Web</Name>
+    <ProjectReference Include="..\TestAddOnWeb\TestAddOnWeb.csproj">
+      <Project>{99E600FC-5FCA-4C6A-AFA4-17DA3025EC20}</Project>
+      <Name>TestAddOnWeb</Name>
       <Private>True</Private>
       <RoleType>Web</RoleType>
       <OutputItemType>SharePointWebProjectOutput</OutputItemType>
-      <RoleName>WordWebAddIn1Web</RoleName>
+      <RoleName>TestAddOnWeb</RoleName>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
